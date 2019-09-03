@@ -19,7 +19,7 @@ In the above example, clicking on *Board 55* would set the ultrasound volume of 
 
 ## Touch 10 Panel Setup
 
-1. Access the local web interface of the Cisco Webex device ([procedure](https://help.webex.com/en-us/n5pqqcm/Advanced-Settings-for-Room-and-Desk-Devices))
+1. Access the local web interface of the master Webex device ([procedure](https://help.webex.com/en-us/n5pqqcm/Advanced-Settings-for-Room-and-Desk-Devices))
 2. Enable the HTTP client (be aware of security implications of enabling insecure HTTPS):
      > Setup > Configuration > HttpClient > AllowInsecureHTTPS > True
 
@@ -34,6 +34,12 @@ In the above example, clicking on *Board 55* would set the ultrasound volume of 
 
 ## VM Setup
 
-
+1. Fill in [devices.json](./devices.json) with your devices. The first one in the list is the master device on which the panel has been deployed.
+2. In [ultrasound.py](./ultrasound.py), fill in the IP address of the VM in *SERVER_URL* (which needs to be in the same local netword as the devices)
+3. Run the Python script which will launch a Flask web app (on port 8081). You can do so by using *nohup* (experimental):
+     > nohup python -u ultrasound.py &
+4. Navigate to:
+     >  http://SERVER_URL:8081/
+  in a browser to point the master device to the web app
 
 
