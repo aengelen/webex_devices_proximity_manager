@@ -1,0 +1,37 @@
+[
+    {
+        "id": "Name of the device",
+        "type": "Room70",
+        "ipAddress" : "IP address of the device",
+        "username" : "Local device credentials (ADMIN or INTEGRATOR)",
+        "password" : ""
+    },
+    {
+        "id": "",
+        "type": "Room55",
+        "ipAddress" : "",
+        "username" : "",
+        "password" : ""
+    },
+    {
+        "id": "",
+        "type": "Board55",
+        "ipAddress" : "",
+        "username" : "",
+        "password" : ""
+    },
+    {
+        "id": "",
+        "type": "RoomKit",
+        "ipAddress" : "",
+        "username" : "",
+        "password" : ""
+    },
+    {
+        "id": "",
+        "type": "DX80",
+        "ipAddress" : "",
+        "username" : "",
+        "password" : ""
+    }
+]
