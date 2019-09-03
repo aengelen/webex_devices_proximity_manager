@@ -40,6 +40,8 @@ In the above example, clicking on *Board 55* would set the ultrasound volume of 
      > nohup python -u ultrasound.py &
 4. Navigate to:
      >  http://SERVER_URL:8081/
-  in a browser to point the master device to the web app
+     
+     in a browser to point the master device to the web app
+5. Try it
 
 
